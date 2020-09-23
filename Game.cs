@@ -13,7 +13,7 @@ public class Game : MonoBehaviour
         EntityArchetype entityArchetype = entityManager.CreateArchetype(
             typeof(InputComponent),
             typeof(MoveSpeedComponent),
-            typeof(LocalToWorld)
+            typeof(Translation)
         );
 
         var entity = entityManager.CreateEntity(entityArchetype);
